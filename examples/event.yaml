@@ -1,0 +1,15 @@
+apiVersion: config.dive.co/v1
+kind: Event
+metadata:
+  name: mysql-upgrade
+spec:
+  summary: Performing database maintenance
+  description: |
+    Our MySQL database is under resourced and requires a larger instance.
+    To do this we need to drain our nodes and replace them with new shiny ones.
+  scope:
+    kind: Cluster
+    name: cluster-name
+  window:
+    starts: 2020-01-16T18:00:00Z
+    ends: 2020-01-16T18:30:00Z

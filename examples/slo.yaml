@@ -1,0 +1,11 @@
+apiVersion: config.dive.co/v1
+kind: SLO
+metadata:
+  name: application-slo
+spec:
+  expression:
+    objective: 99.15
+    period: 7d
+  bound:
+    kind: Deployment
+    name: application-deployment-k8s-name
