@@ -3,7 +3,7 @@ kind: Runbook
 metadata:
   name: servers-are-on-fire
 spec:
-  description: |
+  overview: |
     When your servers start emitting flames, use this runbook
   steps:
     - name: Find a fire extinguisher
