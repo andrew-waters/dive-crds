@@ -1,0 +1,27 @@
+apiVersion: config.dive.co/v1
+kind: Runbook
+metadata:
+  name: servers-are-on-fire
+spec:
+  description: |
+    When your servers start emitting flames, use this runbook
+  steps:
+    - name: Find a fire extinguisher
+      description: |
+        It can usually be found on the wall next to the server rack
+      links:
+        - name: Map of fire extinguishers
+          url: http://our-extinguishers.com/locations
+    - name: Point at server
+      description: |
+        Point the extinguisher at the server
+    - name: Press the button
+      description: |
+        Press the extinguisher button until no more flames are visible.
+        If the extinguisher is empty, call the fire brigade
+    - name: Call the fire brigade
+      description: |
+        Alert them about the fire
+      links:
+        - name: Contacts
+          url: http://our-extinguishers.com/contacts

@@ -30,6 +30,10 @@ spec:
                     name:
                       type: string
                       enum: [Deployment]
+                runbooks:
+                  type: array
+                  items:
+                    type: string
   scope: Namespaced
   names:
     plural: slos

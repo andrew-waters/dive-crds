@@ -9,3 +9,5 @@ spec:
   bound:
     kind: Deployment
     name: application-deployment-k8s-name
+  runbooks:
+    - servers-are-on-fire
